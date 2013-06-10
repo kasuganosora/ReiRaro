@@ -7,7 +7,12 @@
     <!--[if lt IE 9]>
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
     <![endif]-->
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0 Feed for Posts from my site (the main feed)" href="<?php bloginfo('rss2_url'); ?>" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3 - <?php bloginfo('name'); ?> " href="<?php bloginfo('atom_url'); ?>" />
+	<link rel="alternate" type="application/rss+xml" title="Comments Feed - for all the comments on this site" href="<?php bloginfo('comments_rss2_url'); ?>" />
+	
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/normalize.css"/>
      <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/js/prettify/prettify.css"/>
     <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>"/>
