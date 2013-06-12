@@ -581,6 +581,11 @@ footer .copyright{
 .alignright{
     float: right;
 }
+.aligncenter{
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
 .navigation,.pagination{
     overflow: hidden;
 }
@@ -593,6 +598,9 @@ footer .copyright{
 .clearfix{
     clear: both;
 }
+
+
+
 /* icons */
 
 [class^="icon-"],
