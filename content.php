@@ -30,7 +30,7 @@
              </ul>
          </footer>
 
-         <div class="comment-area">
+         <div class="comment-area" id="comments">
 
              <?php comments_template(); ?>
 

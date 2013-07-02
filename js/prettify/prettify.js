@@ -32,13 +32,21 @@ window.PR_SHOULD_USE_CONTINUATION=true;window.PR_TAB_WIDTH=8;window.PR_normalize
         document.getElementsByTagName("code"),document.getElementsByTagName("xmp")],o=[],l=0;l<i.length;++l)for(var n=0,r=i[l].length;n<r;++n)o.push(i[l][n]);i=null;var j=Date;j.now||(j={now:function(){return(new Date).getTime()}});var q=0,m;f()};window.PR={combinePrefixPatterns:O,createSimpleLexer:B,registerLangHandler:u,sourceDecorator:x,PR_ATTRIB_NAME:"atn",PR_ATTRIB_VALUE:"atv",PR_COMMENT:C,PR_DECLARATION:"dec",PR_KEYWORD:R,PR_LITERAL:J,PR_NOCODE:V,PR_PLAIN:z,PR_PUNCTUATION:E,PR_SOURCE:P,PR_STRING:A,
         PR_TAG:"tag",PR_TYPE:S}
 
-    var el, codes = document.getElementsByTagName('code');
+	function addClassName(ele,className){
+		if(!ele.className){
+			ele.className = className;
+		}else{
+			ele.className += className;
+		}
+	}
+    
+	var el, codes = document.getElementsByTagName('code');
     for(var i = 0, l = codes.length; i < l; i++) {
         el = codes[i];
-        if(!el.className)
-            el.className = 'prettyprint';
-        else
-            el.className+= ' prettyprint';
+		addClassName(el,'prettyprint');
+		if(el.parentNode && el.parentNode.tagName === "PRE"){
+			addClassName(el.parentNode,'prettyprint-warp');
+		}
     }
 
     prettyPrint();

@@ -504,6 +504,9 @@ body{
     background-color: #3498db;
 }
 
+.post-comment{
+	margin-top:10px;
+}
 
 /**
 * pagination
@@ -599,8 +602,20 @@ footer .copyright{
     clear: both;
 }
 
+.prettyprint-warp{
+	background:white;
+	padding: 2px;
+	border: 1px solid #ccc;
+	display:block;
+}
 
-
+.prettyprint{
+	display:block;
+	background-color: #F0FFF8;
+	border: 1px solid #CEEFE1;
+	margin:0;
+	padding: 1px 3px;
+}
 /* icons */
 
 [class^="icon-"],
